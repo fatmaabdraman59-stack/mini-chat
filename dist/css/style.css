@@ -1,0 +1,116 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300&family=Poppins&display=swap");
+/*Fonts */
+/* Text colors */
+/*Elements colors */
+input[type="text"], input[type="submit"] {
+  padding: .4em;
+  border-radius: .5em;
+  border: 1px solid #0a8f79; }
+
+form, #feed {
+  width: 50%;
+  margin: 2vh auto; }
+
+*, ::before, ::after {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  color: #333; }
+
+.loading {
+  animation-play-state: paused !important; }
+
+header {
+  margin-bottom: 2vh;
+  padding: 2vh 0;
+  box-shadow: 0 0.1em 0.4em #eee; }
+
+h1, h2 {
+  color: #0a8f79;
+  text-align: center; }
+
+#feed h2 {
+  margin-bottom: 1vh; }
+
+.hello {
+  text-align: center; }
+
+hr {
+  width: 50%;
+  margin: 1em auto;
+  border: 1px dotted #0a8f79; }
+
+fieldset {
+  border: none;
+  display: flex;
+  flex-direction: column; }
+
+input[type="submit"] {
+  width: 100%;
+  margin: 2vh 0;
+  background: #0a8f79;
+  color: white;
+  text-transform: uppercase;
+  font-weight: bold;
+  transition: all 0.5s ease-in-out; }
+  input[type="submit"]:hover {
+    background: white;
+    color: #0a8f79; }
+  input[type="submit"]:active {
+    box-shadow: 0.3em 0.3em 0.6em #eee; }
+
+#infoUser,
+#infoMsg {
+  font-family: "Noto Sans JP", sans-serif; }
+
+.msg-right {
+  color: #096809; }
+
+.msg-error {
+  color: #b40f0f; }
+
+#feed .pseudo {
+  font-weight: bold; }
+#feed .message {
+  font-family: "Noto Sans JP", sans-serif; }
+#feed .posted {
+  font-size: x-small;
+  color: #0a8f79; }
+
+.feed-content {
+  background-color: #eee;
+  border-bottom: 1px solid white;
+  padding: .5em; }
+
+.time {
+  text-align: end;
+  font-weight: 600; }
+
+.last-msg {
+  opacity: 0;
+  transform: translateY(-30px);
+  animation: displaying 0.4s 1.6s ease-out forwards; }
+
+@keyframes displaying {
+  100% {
+    opacity: 1;
+    transform: none; } }
+footer {
+  margin-top: 5vh;
+  padding: 2vh 0;
+  box-shadow: 0 -0.1em 0.4em #eee; }
+  footer p {
+    text-align: center;
+    font-size: small;
+    font-weight: 600; }
+
+/* Responsive display */
+@media (min-width: 1012px) {
+  form, #feed, hr {
+    width: 35%; } }
+@media (max-width: 495px) {
+  form, #feed, hr {
+    width: 80%; } }
+
+/*# sourceMappingURL=style.css.map */
